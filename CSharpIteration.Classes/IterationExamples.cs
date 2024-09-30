@@ -20,7 +20,7 @@
 		// For each example with int list
 		public static int SumNumbers()
 		{
-			List<int> numbers = new() { 5, 2, 3, 6, 7, 8 };
+			List<int> numbers = [ 5, 2, 3, 6, 7, 8 ];
 			int total = 0;
 			foreach (int num in numbers)
 			{
@@ -32,11 +32,11 @@
 		// For each example with string list
 		public static string BirthdayGreeting()
 		{
-			List<string> names = new() { "Bob", "Jane", "Kevin", "Fred" };
+			List<string> names = [ "Bob", "Jane", "Kevin", "Fred" ];
 			string greeting = "Happy birthday to ";
-			foreach (string name in names)
+			foreach (string item in names)
 			{
-				greeting = greeting + $"{name} ";
+				greeting = greeting + $"{item} ";
 			}
 			return greeting;
 		}
@@ -53,13 +53,13 @@
 		}
 
 		//public static List<double> SquaredNumbersUsingForEach(List<double> numbers)
-  //      {
-  //          foreach (double num in numbers)
-  //          {
-  //              num = Math.Pow(num, 2);
-  //          }
-  //          return numbers;
-  //      }
+		//{
+		//	foreach (double num in numbers)
+		//	{
+		//		num = Math.Pow(num, 2);
+		//	}
+		//	return numbers;
+		//}
 
 		// Nested for loop
 		public static List<int> FindTotalTestScore(List<List<int>> testScores)
